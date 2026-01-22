@@ -57,7 +57,7 @@ Customers may opt-in to financial incentive programs through:
 
 Customers may withdraw from a financial incentive program at any time by:
 
-- Emailing privacy@catchai.com
+- Emailing privacy@aisrc.net
 - Accessing account settings and opting out
 - Calling our customer service line
 - Submitting a written request
@@ -116,7 +116,7 @@ As a California resident, you have the right to:
 
 To exercise these rights, contact us at:
 
-**Email:** privacy@catchai.com  
+**Email:** privacy@aisrc.net  
 **Phone:** [Contact Number]  
 **Address:** [Your Company Address]
 
@@ -124,7 +124,7 @@ To exercise these rights, contact us at:
 
 For questions about this California Notice or our financial incentive programs:
 
-**Email:** privacy@catchai.com  
+**Email:** privacy@aisrc.net  
 **Web Form:** [Your Company Website]/contact  
 **Mail:** [Your Company Address]
 

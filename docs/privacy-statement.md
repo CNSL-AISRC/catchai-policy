@@ -73,7 +73,7 @@ We use cookies and similar technologies to enhance your experience, analyze usag
 
 For privacy-related questions or concerns:
 
-**Email:** privacy@catchai.com  
+**Email:** privacy@aisrc.net  
 **Phone:** [Contact Number]  
 **Address:** [Your Company Address]
 

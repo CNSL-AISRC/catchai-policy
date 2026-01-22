@@ -65,7 +65,7 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./output
-          cname: policies.catchai.com
+          cname: policies.aisrc.net
           force_orphan: false
 
   test:

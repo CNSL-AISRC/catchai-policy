@@ -42,5 +42,5 @@ These terms and conditions are governed by and construed in accordance with the 
 ## 8. Contact Us
 
 If you have any questions about these Terms of Use, please contact us at:
-- Email: legal@catchai.com
+- Email: legal@aisrc.net
 - Address: [Your Company Address]
