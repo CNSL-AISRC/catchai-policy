@@ -1,0 +1,114 @@
+name: Build and Deploy Policy Website
+
+on:
+  push:
+    branches:
+      - main
+      - master
+      - develop
+    paths:
+      - 'docs/**'
+      - 'src/**'
+      - 'package.json'
+  pull_request:
+    branches:
+      - main
+      - master
+      - develop
+    paths:
+      - 'docs/**'
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: Build HTML from Markdown
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build static website
+        run: npm run build
+
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: website
+          path: output/
+
+      - name: Commit and push changes
+        if: github.event_name == 'push'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add output/
+          git commit -m "Build: Generate HTML from markdown files" || true
+          git push
+
+      - name: Deploy to GitHub Pages
+        if: github.event_name == 'push' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master')
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./output
+          cname: policies.catchai.com
+          force_orphan: false
+
+  test:
+    runs-on: ubuntu-latest
+    name: Validate Generated HTML
+
+    needs: build
+
+    steps:
+      - name: Download build artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: website
+
+      - name: Check HTML files exist
+        run: |
+          echo "Checking for HTML files..."
+          ls -la *.html
+          
+          # Verify all required files
+          test -f "index.html" && echo "✓ index.html exists"
+          test -f "privacy-policy.html" && echo "✓ privacy-policy.html exists"
+          test -f "terms-of-use.html" && echo "✓ terms-of-use.html exists"
+          test -f "privacy-statement.html" && echo "✓ privacy-statement.html exists"
+          test -f "california-notice.html" && echo "✓ california-notice.html exists"
+
+      - name: Validate HTML structure
+        run: |
+          echo "Validating HTML structure..."
+          
+          for file in *.html; do
+            echo "Checking $file..."
+            if grep -q "<!DOCTYPE html>" "$file"; then
+              echo "  ✓ Valid DOCTYPE"
+            else
+              echo "  ✗ Missing DOCTYPE"
+              exit 1
+            fi
+            
+            if grep -q "<html" "$file"; then
+              echo "  ✓ HTML tags present"
+            else
+              echo "  ✗ Missing HTML tags"
+              exit 1
+            fi
+          done

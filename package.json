@@ -1,0 +1,25 @@
+{
+  "name": "catchai-policy",
+  "version": "1.0.0",
+  "description": "Static website for CatchAI policy documents",
+  "main": "src/build.js",
+  "scripts": {
+    "build": "node src/build.js",
+    "dev": "node src/build.js && http-server output -p 8000 -c-1",
+    "start": "http-server output -p 8000 -c-1"
+  },
+  "keywords": [
+    "policy",
+    "privacy",
+    "terms",
+    "static-site"
+  ],
+  "author": "CatchAI",
+  "license": "MIT",
+  "dependencies": {
+    "marked": "^11.1.1"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}
