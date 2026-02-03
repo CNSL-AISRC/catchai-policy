@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="CatchAI Policy Documents">
-    <title>Policy Documents - CatchAI</title>
+    <meta name="description" content="CatchAI Policy Documents - Select Language">
+    <title>CatchAI - Select Language</title>
     <style>
         * {
             margin: 0;
@@ -19,112 +19,78 @@
             background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
             min-height: 100vh;
             padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         .container {
-            max-width: 900px;
-            margin: 0 auto;
+            max-width: 600px;
             background: white;
             border-radius: 8px;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-            padding: 40px;
+            padding: 60px 40px;
+            text-align: center;
         }
 
         h1 {
             color: #2c3e50;
-            margin-bottom: 10px;
-            border-bottom: 3px solid #3498db;
-            padding-bottom: 15px;
+            margin-bottom: 15px;
             font-size: 2.5em;
         }
 
-        .subtitle {
+        p {
             color: #7f8c8d;
             font-size: 1.1em;
-            margin-bottom: 30px;
+            margin-bottom: 40px;
         }
 
-        .documents-grid {
+        .language-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            grid-template-columns: 1fr 1fr;
             gap: 20px;
-            margin: 30px 0;
+            margin: 40px 0;
         }
 
-        .document-card {
+        .language-card {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            padding: 25px;
+            padding: 40px 20px;
             border-radius: 8px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s, box-shadow 0.3s;
-            color: white;
             text-decoration: none;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
+            color: white;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
         }
 
-        .document-card:nth-child(2) {
+        .language-card:nth-child(2) {
             background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
         }
 
-        .document-card:nth-child(3) {
-            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
-        }
-
-        .document-card:nth-child(4) {
-            background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
-        }
-
-        .document-card:hover {
+        .language-card:hover {
             transform: translateY(-5px);
             box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
         }
 
-        .document-card h2 {
-            font-size: 1.5em;
+        .language-card h2 {
+            font-size: 1.8em;
             margin-bottom: 10px;
         }
 
-        .document-card p {
-            font-size: 0.95em;
-            opacity: 0.9;
-            margin-bottom: 15px;
-            flex-grow: 1;
-        }
-
-        .document-card .link-btn {
-            display: inline-block;
-            background: rgba(255, 255, 255, 0.2);
-            padding: 10px 15px;
-            border-radius: 5px;
-            transition: background 0.3s;
-            width: fit-content;
-            margin-top: auto;
-        }
-
-        .document-card .link-btn:hover {
-            background: rgba(255, 255, 255, 0.3);
-        }
-
-        .footer {
-            margin-top: 40px;
-            padding-top: 20px;
-            border-top: 1px solid #ecf0f1;
-            text-align: center;
-            color: #7f8c8d;
+        .language-card p {
+            margin: 0;
+            color: rgba(255, 255, 255, 0.9);
         }
 
         @media (max-width: 768px) {
             .container {
-                padding: 20px;
+                padding: 40px 20px;
             }
 
             h1 {
                 font-size: 1.8em;
             }
 
-            .documents-grid {
+            .language-grid {
                 grid-template-columns: 1fr;
             }
         }
@@ -132,45 +98,19 @@
 </head>
 <body>
     <div class="container">
-        <h1>CatchAI Policy Documents</h1>
-        <p class="subtitle">Legal documents and policies that govern our services</p>
+        <h1>CatchAI Policies</h1>
+        <p>Select your preferred language</p>
 
-        <div class="documents-grid">
-            <a href="privacy-policy.html" class="document-card">
-                <div>
-                    <h2>Privacy Policy</h2>
-                    <p>Learn how we collect, use, and protect your personal information.</p>
-                </div>
-                <span class="link-btn">Read More →</span>
+        <div class="language-grid">
+            <a href="en/index.html" class="language-card">
+                <h2>English</h2>
+                <p>View in English</p>
             </a>
 
-            <a href="terms-of-use.html" class="document-card">
-                <div>
-                    <h2>Terms of Use</h2>
-                    <p>Understand the terms and conditions governing your use of our services.</p>
-                </div>
-                <span class="link-btn">Read More →</span>
+            <a href="kr/index.html" class="language-card">
+                <h2>한국어</h2>
+                <p>한국어로 보기</p>
             </a>
-
-            <a href="privacy-statement.html" class="document-card">
-                <div>
-                    <h2>Privacy Statement</h2>
-                    <p>Detailed information about how we handle your data and privacy rights.</p>
-                </div>
-                <span class="link-btn">Read More →</span>
-            </a>
-
-            <a href="california-notice.html" class="document-card">
-                <div>
-                    <h2>California Notice</h2>
-                    <p>California Consumer Privacy Act (CCPA) disclosures and financial incentive programs.</p>
-                </div>
-                <span class="link-btn">Read More →</span>
-            </a>
-        </div>
-
-        <div class="footer">
-            <p>&copy; 2026 CatchAI. All rights reserved. | Last updated: January 22, 2026</p>
         </div>
     </div>
 </body>
