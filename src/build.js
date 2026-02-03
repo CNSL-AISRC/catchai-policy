@@ -459,7 +459,7 @@ function createIndexPages() {
         </div>
 
         <div class="footer">
-            <p>&copy; 2026 CatchAI. All rights reserved. | Last updated: January 22, 2026</p>
+            <p>&copy; 2026 CatchAI. All rights reserved. | Last updated: February 03, 2026</p>
         </div>
     </div>
 </body>
