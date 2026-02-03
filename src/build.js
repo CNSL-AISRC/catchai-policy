@@ -216,11 +216,11 @@ const htmlTemplate = (title, content, locale = 'en') => `<!DOCTYPE html>
     <div class="container">
         ${content}
         <div class="nav-links">
-            <a href="${locale}/index.html">← Back to Home</a>
-            <a href="${locale}/privacy-policy.html">Privacy Policy</a>
-            <a href="${locale}/terms-of-use.html">Terms of Use</a>
-            <a href="${locale}/privacy-statement.html">Privacy Statement</a>
-            <a href="${locale}/california-notice.html">California Notice</a>
+            <a href="index.html">← Back to Home</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="privacy-statement.html">Privacy Statement</a>
+            <a href="california-notice.html">California Notice</a>
         </div>
     </div>
 </body>
@@ -425,7 +425,7 @@ function createIndexPages() {
         <p class="subtitle">Legal documents and policies that govern our services</p>
 
         <div class="documents-grid">
-            <a href="${locale}/privacy-policy.html" class="document-card">
+            <a href="privacy-policy.html" class="document-card">
                 <div>
                     <h2>Privacy Policy</h2>
                     <p>Learn how we collect, use, and protect your personal information.</p>
@@ -433,7 +433,7 @@ function createIndexPages() {
                 <span class="link-btn">Read More →</span>
             </a>
 
-            <a href="${locale}/terms-of-use.html" class="document-card">
+            <a href="terms-of-use.html" class="document-card">
                 <div>
                     <h2>Terms of Use</h2>
                     <p>Understand the terms and conditions governing your use of our services.</p>
@@ -441,7 +441,7 @@ function createIndexPages() {
                 <span class="link-btn">Read More →</span>
             </a>
 
-            <a href="${locale}/privacy-statement.html" class="document-card">
+            <a href="privacy-statement.html" class="document-card">
                 <div>
                     <h2>Privacy Statement</h2>
                     <p>Detailed information about how we handle your data and privacy rights.</p>
@@ -449,7 +449,7 @@ function createIndexPages() {
                 <span class="link-btn">Read More →</span>
             </a>
 
-            <a href="${locale}/california-notice.html" class="document-card">
+            <a href="california-notice.html" class="document-card">
                 <div>
                     <h2>California Notice</h2>
                     <p>California Consumer Privacy Act (CCPA) disclosures and financial incentive programs.</p>
