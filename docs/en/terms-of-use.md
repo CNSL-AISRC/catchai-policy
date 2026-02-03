@@ -2,14 +2,14 @@
 
 **시행일자**: 2026년 ○월 ○일
 
-These Terms of Use (the “Terms”) govern the use of the AI-based deepfake voice detection application Catch AI (the “Service”) provided by AISRC (the “Company”). By accessing or using the Service, you agree to be bound by these Terms and the Privacy Policy. If you do not agree to these Terms, you must discontinue use of the Service.
+These Terms of Use (the Terms) govern the use of the AI-based deepfake voice detection application Catch AI (the Service) provided by AISRC (the Company). By accessing or using the Service, you agree to be bound by these Terms and the Privacy Policy. If you do not agree to these Terms, you must discontinue use of the Service.
 
 ## 1. Definitions
 
-- **“User”** means any individual who accesses or uses the Service.
-- **“Service”** means the deepfake voice detection service and related functionalities provided by the Company.
-- **“Audio Data”** means any audio uploaded, imported from external sources (such as SNS or messaging platforms), or recorded directly by the User through the Service.
-- **“Analysis Results”** means informational outputs indicating the likelihood that the audio contains deepfake content.
+- **User** means any individual who accesses or uses the Service.
+- **Service** means the deepfake voice detection service and related functionalities provided by the Company.
+- **Audio Data** means any audio uploaded, imported from external sources (such as SNS or messaging platforms), or recorded directly by the User through the Service.
+- **Analysis Results** means informational outputs indicating the likelihood that the audio contains deepfake content.
 
 ## 2. Nature and Limitations of the Service
 
@@ -43,7 +43,7 @@ The Company may restrict or suspend access to the Service in case of violations.
 
 ## 6. Disclaimer and Limitation of Liability
 
-1. The Service is provided on an “AS IS” basis.
+1. The Service is provided on an AS IS basis.
 2. The Company shall not be liable for errors, false positives, or false negatives in the Analysis Results.
 3. Any reliance on or use of the Analysis Results is at the User’s own risk.
 4. To the extent permitted by law, the Company shall not be liable for damages arising from the use of free services.

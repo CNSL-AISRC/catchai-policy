@@ -7,7 +7,8 @@ on:
       - master
       - develop
     paths:
-      - 'docs/**'
+      - 'docs/en/**'
+      - 'docs/kr/**'
       - 'src/**'
       - 'package.json'
   pull_request:
@@ -16,7 +17,8 @@ on:
       - master
       - develop
     paths:
-      - 'docs/**'
+      - 'docs/en/**'
+      - 'docs/kr/**'
 
 permissions:
   contents: write
@@ -82,20 +84,28 @@ jobs:
       - name: Check HTML files exist
         run: |
           echo "Checking for HTML files..."
-          ls -la *.html
+          ls -la
           
-          # Verify all required files
-          test -f "index.html" && echo "✓ index.html exists"
-          test -f "privacy-policy.html" && echo "✓ privacy-policy.html exists"
-          test -f "terms-of-use.html" && echo "✓ terms-of-use.html exists"
-          test -f "privacy-statement.html" && echo "✓ privacy-statement.html exists"
-          test -f "california-notice.html" && echo "✓ california-notice.html exists"
+          # Verify root index file
+          test -f "index.html" && echo "✓ root index.html exists"
+          
+          # Verify locale directories and files
+          for locale in en kr; do
+            echo "Checking $locale locale..."
+            test -d "$locale" && echo "  ✓ $locale directory exists"
+            test -f "$locale/index.html" && echo "  ✓ $locale/index.html exists"
+            test -f "$locale/privacy-policy.html" && echo "  ✓ $locale/privacy-policy.html exists"
+            test -f "$locale/terms-of-use.html" && echo "  ✓ $locale/terms-of-use.html exists"
+            test -f "$locale/privacy-statement.html" && echo "  ✓ $locale/privacy-statement.html exists"
+            test -f "$locale/california-notice.html" && echo "  ✓ $locale/california-notice.html exists"
+          done
 
       - name: Validate HTML structure
         run: |
           echo "Validating HTML structure..."
           
-          for file in *.html; do
+          # Check root index
+          for file in index.html en/index.html en/privacy-policy.html en/terms-of-use.html en/privacy-statement.html en/california-notice.html kr/index.html kr/privacy-policy.html kr/terms-of-use.html kr/privacy-statement.html kr/california-notice.html; do
             echo "Checking $file..."
             if grep -q "<!DOCTYPE html>" "$file"; then
               echo "  ✓ Valid DOCTYPE"
