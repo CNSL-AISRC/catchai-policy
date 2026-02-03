@@ -1,56 +1,42 @@
-# 개인정보 처리 요약 안내 (Privacy Statement)
+# California Notice of Financial Incentive
 
-Catch AI is committed to protecting your privacy. This Privacy Statement provides a clear and concise overview of how we handle personal data in connection with our AI-based deepfake voice detection service.
+## 1. 개요
 
-## 1. Information We Collect
+본 고지는 「캘리포니아 소비자 개인정보 보호법(CCPA)」 및 「캘리포니아 개인정보 권리법(CPRA)」에 따라 제공되며, 미국 캘리포니아주 거주자를 대상으로 합니다.
 
-### Information You Provide
+## 2. 재정적 인센티브 미운영 고지
 
-- Email address and account identifier provided through Google Sign-In
-- Audio files uploaded or recorded by you for analysis
+Catch AI는 개인정보 또는 생체정보의 수집, 보유, 이용 또는 공유를 대가로 하는 어떠한 재정적 인센티브(financial incentive), 보상, 할인, 리워드, 포인트, 추천 혜택, 로열티 프로그램도 운영하지 않습니다.
 
-### Information Automatically Generated
+## 3. 개인정보와 서비스 이용
 
-- Non-identifiable device environment information (such as OS and app version)
-- Service usage logs and error records that do not identify individuals
+- Catch AI는 서비스 제공, 법령 준수 및 보안 확보를 위해 필요한 최소 범위 내에서만 개인정보를 처리합니다.
+- 이용자는 개인정보 제공의 대가로 금전적 또는 비금전적 혜택을 제공받지 않습니다.
 
-We do not collect phone numbers, physical addresses, location data, call logs, messages, device unique identifiers (IMEI, MAC address), advertising identifiers, or store IP addresses as personal identifiers.
+## 4. 차별 금지
 
-## 2. Purpose of Use
+Catch AI는 개인정보 열람, 삭제, 처리 제한, 공유 거부 등 개인정보 관련 권리를 행사했다는 이유로 이용자에게 불이익을 주거나 차별하지 않습니다.
 
-We use the collected information solely for the following purposes:
+## 5. 향후 변경 가능성
 
-- Providing AI-based audio deepfake detection services
-- Ensuring service stability and troubleshooting
-- Preventing security threats and misuse
-- Complying with applicable laws and Google Play policies
+향후 재정적 인센티브 프로그램을 도입하는 경우, Catch AI는 관련 법령에 따라 다음 사항을 사전에 고지합니다.
 
-## 3. Audio Data Processing
+- 프로그램의 내용 및 조건
+- 처리되는 개인정보의 항목
+- 인센티브 가치 산정 방식
+- 이용자 동의 절차
 
-- Audio data is used only for automated AI-based deepfake analysis.
-- Audio data is not stored on our servers and is deleted immediately after analysis.
-- Audio data is not used for AI training, reuse, marketing, or shared with third parties.
+## 6. 캘리포니아 소비자의 권리
 
-## 4. Data Sharing
+캘리포니아 거주자는 다음과 같은 권리를 가집니다.
 
-We do not sell, rent, or share personal data or audio data with third parties, except where required by law.
+- 개인정보 수집 및 이용 내역에 대한 알 권리
+- 개인정보 삭제 요청권
+- 개인정보 판매 또는 공유 거부권
+- 개인정보 권리 행사에 따른 차별 금지
 
-## 5. Your Rights
+## 7. 문의처
 
-Depending on applicable laws, you may request access to, correction, deletion, or restriction of processing of your personal data by contacting us.
+본 고지 또는 개인정보 보호와 관련하여 문의사항이 있는 경우 아래로 연락해 주시기 바랍니다.
 
-## 6. Data Security
-
-We implement reasonable technical and organizational security measures, including access control and periodic security checks, to protect your information.
-
-## 7. Changes to This Statement
-
-This Privacy Statement may be updated from time to time. Material changes will be communicated through the Service.
-
-## 8. Contact
-
-For privacy-related inquiries:
-
-- Email: privacy@aisrc.net
-
-For full details, please refer to our Privacy Policy.
+- 이메일: privacy@aisrc.net
