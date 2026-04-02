@@ -1,10 +1,10 @@
 # 개인정보 처리방침 (Privacy Policy)
 
-**Last updated**: 2026년 02월 03일
+**Last updated**: April 2, 2026
 
 AISRC (hereinafter referred to as the “Company”) establishes and discloses this Privacy Policy in accordance with the Personal Information Protection Act, the Act on Promotion of Information and Communications Network Utilization and Information Protection, the Enforcement Decree of the Personal Information Protection Act, and Google Play policies, in order to protect users’ personal information and biometric data and to promptly handle related complaints.
 
-This Privacy Policy explains how and for what purposes users’ personal information is processed in connection with the use of the AI-based deepfake voice detection application “Catch AI” (hereinafter referred to as the “Service”) provided by the Company.
+This Privacy Policy explains how and for what purposes users’ personal information is processed in connection with the use of the AI-based deepfake voice detection application “AICatcher” (hereinafter referred to as the “Service”) provided by the Company.
 
 ## 1. Purpose of Processing Personal Information and Biometric Data
 

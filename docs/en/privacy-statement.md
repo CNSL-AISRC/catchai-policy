@@ -1,6 +1,6 @@
 # Privacy Statement
 
-**Effective Date: January 22, 2026**
+**Effective Date: April 2, 2026**
 
 ## Overview
 

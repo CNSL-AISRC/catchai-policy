@@ -1,8 +1,8 @@
 # 서비스 이용약관 (Terms of Use)
 
-**시행일자**: 2026년 ○월 ○일
+**Last updated**: April 2, 2026
 
-These Terms of Use (the Terms) govern the use of the AI-based deepfake voice detection application Catch AI (the Service) provided by AISRC (the Company). By accessing or using the Service, you agree to be bound by these Terms and the Privacy Policy. If you do not agree to these Terms, you must discontinue use of the Service.
+These Terms of Use (the Terms) govern the use of the AI-based deepfake voice detection application AICatcher (the Service) provided by AISRC (the Company). By accessing or using the Service, you agree to be bound by these Terms and the Privacy Policy. If you do not agree to these Terms, you must discontinue use of the Service.
 
 ## 1. Definitions
 
